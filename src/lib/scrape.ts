@@ -8,7 +8,7 @@ const scrape = async () => {
     headless: true,
     defaultViewport: null,
     executablePath: "/usr/bin/google-chrome",
-    args: ["--no-sandbox"],
+    args: ["--no-sandbox", "--single-process", "--no-zygote"],
   });
 
   const page = await browser.newPage();
