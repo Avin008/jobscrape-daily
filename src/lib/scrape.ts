@@ -28,7 +28,7 @@ const scrape = async () => {
     return data;
   });
   const data = await el;
-  console.log(data);
+  return data;
 };
 
 export { scrape };
